@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte</title>
+    <style>
+        /* Estilos CSS aquí */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+        nav a:hover {
+            color: #ccc;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        form {
+            margin-top: 20px;
+        }
+        form input, form textarea, form button {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+        form textarea {
+            height: 300px;
+        }
+        form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+        .hidden {
+            display: none;
+        }
+
+        .image-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            max-width: 50%;
+            margin-right: 20px;
+        }
+
+        .image-container p {
+            flex: 1;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>ArteVista</h1>
+</header>
+
+<nav>
+    <a href="#" onclick="showSection('inicio')">Inicio</a>
+    <a href="#" onclick="showSection('galeria')">Galería</a>
+    <a href="#" onclick="showSection('contacto')">Contacto</a>
+</nav>
+
+<div class="container">
+    <section id="inicio">
+        <h2>Bienvenido a nuestra Galería de Arte online</h2>
+        <p>¡Bienvenido a ArteVista, tu ventana al emocionante y vibrante mundo del arte expresionista!
+            En ArteVista, nos enorgullecemos de ofrecerte una experiencia única donde puedes sumergirte en
+            las profundidades del arte expresionista y explorar las obras de los artistas más influyentes de
+            este movimiento.
+        </p>
+        <p>Sumérgete en la energía palpable de los colores vibrantes, las formas dramáticas y las emociones
+            intensas que caracterizan al arte expresionista. Cada obra cuenta una historia única y poderosa que
+            despierta tus sentidos y te invita a reflexionar sobre la condición humana.
+        </p>
+        <p>En ArteVista, creemos en la importancia de hacer que el arte sea accesible para todos. Por eso,
+            te ofrecemos una experiencia de navegación intuitiva y amigable, donde puedes explorar nuestras
+            colecciones, aprender más sobre los artistas y sus obras, y adquirir tus piezas favoritas con
+            facilidad.
+        </p>
+        <p>Ya seas un apasionado del arte expresionista o simplemente estés explorando este emocionante
+            movimiento por primera vez, ArteVista tiene algo para todos. Únete a nosotros en este viaje
+            emocionante a través del arte expresionista y permite que tus sentidos sean cautivados por la
+            belleza y la profundidad del alma humana.
+        </p>
+        <p>¡Descubre ArteVista hoy y déjate inspirar por el poder del arte expresionista!
+        </p>
+    </section>
+
+    <section id="galeria" class="hidden">
+        <h2>Galería</h2>
+        <div class="gallery">
+            <div class="image-container">
+                <img src="imagen1.png" alt="Obra de arte 1">
+                <p>"Turbulencias del Alma Marina":
+                    En esta pintura expresionista, el artista ha capturado la esencia del océano en todo su
+                    esplendor y furia. Las aguas tumultuosas danzan bajo un cielo tormentoso, reflejando el
+                    estado interno del artista. Un barco solitario lucha contra las olas gigantes, su
+                    silueta apenas visible entre la espuma y la neblina marina.</p>
+            </div>
+            <div class="image-container">
+                <img src="imagen2.png" alt="Obra de arte 2">
+                <p>"Ritmo Desbordante": En esta poderosa obra, el artista nos sumerge en la furia y la
+                    belleza de la naturaleza a través de un impresionante choque de elementos. Las olas, con
+                    sus crestas espumosas y sus movimientos tumultuosos, chocan contra las rocas con una
+                    energía irresistible.</p>
+            </div>
+            <div class="image-container">
+                <img src="imagen3.png" alt="Obra de arte 3">
+                <p>"Reflejos del Alma": En este autorretrato expresionista, el artista nos invita a un viaje
+                    introspectivo a través de las profundidades de su ser. Con pinceladas audaces y colores
+                    vibrantes, el artista captura la complejidad y la intensidad de sus propias emociones y
+                    experiencias.
+                    El rostro del artista emerge de la tela con una expresión enigmática, sus ojos reflejando
+                    una mezcla de pasión, angustia y determinación. Cada trazo de la brocha parece revelar
+                    capas ocultas de su identidad, desde las líneas de preocupación hasta los destellos de
+                    esperanza y resolución.</p>
+            </div>
+            <div class="image-container">
+                <img src="imagen4.png" alt="Obra de arte 4">
+                <p>"Horizonte en Éxtasis" es una oda a la belleza y la fuerza de la naturaleza. A través de
+                    su enfoque expresionista, el artista captura la esencia misma del océano en toda su gloria
+                    y nos invita a sumergirnos en la vastedad y la magnificencia del mundo natural. Es una obra
+                    que nos transporta más allá de los límites del lienzo, hacia un reino de asombro y
+                    admiración por el poder y la majestuosidad del océano y el cielo.</p>
+            </div>
+        </div>
+        <div style="margin-bottom: 100px;"></div> <!-- Espacio de margen para evitar solapamiento con el footer -->
+    </section>
+
+
+    <section id="contacto" class="hidden">
+        <h2>Contacto</h2>
+        <form action="enviar.php" method="post">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>Derechos de autor © 2024 ArteVista Galería de Arte. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    function showSection(sectionId) {
+        var sections = document.querySelectorAll('section');
+        sections.forEach(function(section) {
+            if (section.id === sectionId) {
+                section.classList.remove('hidden');
+            } else {
+                section.classList.add('hidden');
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
